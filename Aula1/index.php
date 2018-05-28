@@ -22,7 +22,7 @@ and open the template in the editor.
                 $nome = str_replace("hcode", "dudz", $nome);
                 echo "<br>".$nome;
                 $arrayString = ["parentes","mae",$nome];
-                echo 
+              
         ?>
     </body>
 </html>
