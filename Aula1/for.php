@@ -8,39 +8,35 @@ if
         <title></title>
     </head>
     <body>
-        <?php
-        $meses = ["Janeiro","Fevereiro","Março",
-                  "Abril","Maio","Junho",
-                  "Julho","Agosto","Setembro",
-                  "Outubro","Novembro","Dezembro"];
-        foreach ($meses as $key => $mes) {
-            echo $key+1 . " --> " . $mes ."<br>";
-        }
-        ?>
-        
-        
-        
         <form action="for.php" method="GET">
-            <input type="text" name="nome">
-            <input type="date" name="nascimento">
-            <input type="submit" value="OK">
+            <input type="text" name="nome"   style="height: 20px;" >
+            <input type="date" name="nascimento" style="height: 20px;">
+            <input type="submit" value="OK"  style="height: 34px;">
         </form>
         
         <?php
-            foreach($_GET as $indice => $valor){
-                echo "Nome do campo " . $indice;
-                echo "<br> Valor do campo: " . $valor ."<br><br>";
-            }
+            //foreach($_GET as $indice => $valor){
+            //    echo "Nome do campo " . $indice;
+            //    echo "<br> Valor do campo: " . $valor ."<br><br>";
+            //}
             
             $obj = new StdClass;
             $obj-> foo = 'bar';
             var_dump($obj);
+            echo '<br><br>Acessando a propriedade foo do objeto $obj=>foo <br>';
+            echo $obj->foo;
+            echo '<br>';
             
             $pessoas = array();
             array_push($pessoas, ["nome"=>"Eduardo","sobrenome"=>"seabra"]);
             array_push($pessoas, ["nome"=>"Bruna","sobrenome"=>"Soares Seabra"]);
             echo "<br>";
-            echo $pessoas[0]["nome"];
+            //convertendo para JSON
+            echo json_encode($pessoas);
+            //convertendo um JSON em ARRAY
+            $json = '[{"nome":"Eduardo","sobrenome":"seabra"},{"nome":"Bruna","sobrenome":"Soares Seabra"}]';
+            $arrayJson = json_decode($json,true);
+            var_dump($arrayJson);
         ?>
     </body>
 </html>
