@@ -21,9 +21,9 @@ and open the template in the editor.
                         array(
                             'nome_cargo'=>'Diretor Comercial',
                             'subordinados'=>
-                                array('nome_cargo'=>'Gerente de Vendas')
+                                array('nome_cargo'=>'Gerente Comercial',
+                                       'subordinados'=>'none')
                             )
-                        
                        ,
                         //Termino Diretor Comercial
                         //inicio Diretor Financeiro

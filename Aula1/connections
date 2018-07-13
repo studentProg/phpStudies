@@ -1,0 +1,55 @@
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+_apt:x:104:65534::/nonexistent:/bin/false
+mysql:x:105:109:MySQL Server,,,:/nonexistent:/bin/false
+epmd:x:106:110::/var/run/epmd:/bin/false
+Debian-exim:x:107:111::/var/spool/exim4:/bin/false
+uuidd:x:108:113::/run/uuidd:/bin/false
+rwhod:x:109:65534::/var/spool/rwho:/bin/false
+redsocks:x:110:114::/var/run/redsocks:/bin/false
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+miredo:x:112:65534::/var/run/miredo:/bin/false
+ntp:x:114:117::/home/ntp:/bin/false
+stunnel4:x:115:119::/var/run/stunnel4:/bin/false
+sslh:x:116:120::/nonexistent:/bin/false
+rtkit:x:117:121:RealtimeKit,,,:/proc:/bin/false
+postgres:x:118:122:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+dnsmasq:x:119:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+messagebus:x:120:123::/var/run/dbus:/bin/false
+iodine:x:121:65534::/var/run/iodine:/bin/false
+arpwatch:x:122:125:ARP Watcher,,,:/var/lib/arpwatch:/bin/sh
+couchdb:x:123:128:CouchDB Administrator,,,:/var/lib/couchdb:/bin/bash
+avahi:x:124:131:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+sshd:x:125:65534::/run/sshd:/usr/sbin/nologin
+colord:x:126:132:colord colour management daemon,,,:/var/lib/colord:/bin/false
+saned:x:127:134::/var/lib/saned:/bin/false
+speech-dispatcher:x:128:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+pulse:x:129:135:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+king-phisher:x:130:137::/var/lib/king-phisher:/bin/false
+Debian-gdm:x:131:138:Gnome Display Manager:/var/lib/gdm3:/bin/false
+dradis:x:132:139::/var/lib/dradis:/bin/false
+beef-xss:x:133:140::/var/lib/beef-xss:/bin/false
+geoclue:x:103:116::/var/lib/geoclue:/usr/sbin/nologin
+gluster:x:113:141::/var/lib/glusterd:/usr/sbin/nologin
+Debian-snmp:x:134:142::/var/lib/snmp:/bin/false
+inetsim:x:135:999::/var/lib/inetsim:/usr/sbin/nologin
+teste:x:1000:1000::/home/teste:/bin/sh
